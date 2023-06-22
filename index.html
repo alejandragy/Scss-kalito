@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./img/icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;400;500&display=swap" rel="stylesheet">
+    <title>Kalito</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <h1 class="navbar__title">Kalito</h1>
+                <a href="./index.html"><img src="./img/logo-nav.png" class="navbar__logo" alt="Logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa-solid fa-bars navbar__bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/proceso-de-adopcion.html">Proceso de adopción</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/adoptar.html">Adoptar</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/colaborar.html">Colaborar</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+                <ul class="nav__desktop">
+                    <li><a href="./index.html" class="nav__item">Home</a></li>
+                    <li><a href="./pages/proceso-de-adopcion.html" class="nav__item">Proceso de adopción</a></li>
+                    <li><a href="./pages/adoptar.html" class="nav__item">Adoptar</a></li>
+                    <li><a href="./pages/colaborar.html" class="nav__item">Colaborar</a></li>
+                    <li><a href="./pages/contacto.html" class="nav__item">Contacto</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="bienvenida width-desktop">
+            <h2 class="bienvenida__title title">El amor es una palabra de cuatro patas</h2>
+            <div class="bienvenida__caja-img"></div>
+            <p class="bienvenida__txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident recusandae id
+                aliquam, quaerat voluptate quas consequuntur minus maiores magnam perspiciatis officia, dolor atque ab
+                laudantium ad perferendis suscipit illo placeat?</p>
+            <button class="bienvenida__btn btn">Quiero adoptar</button>
+        </section>
+
+        <section class="antes-adoptar">
+            <div class="antes-adoptar__content">
+                <h2 class="antes-adoptar__title title">Antes de adoptar</h2>
+                <div class="antes-adoptar__caja-txt">
+                    <p class="antes-adoptar__txt"> Kalito es un puente entre distintos refugios y adoptantes.
+                        Facilitamos este contacto a través de nuestro proceso de adopción que se compone de tres etapas:
+                        <br>
+                        1. Conocer los requisitos <br> 2. Solicitar adopción <br> 3. Primer encuentro <br> Te invitamos
+                        que conozcas un poco más de qué se trata cada uno de estos pasos
+                    </p>
+                </div>
+                <button class="antes-adoptar__btn btn">Ver proceso de adopción</button>
+            </div>
+        </section>
+
+        <section class="intro-proceso width-desktop">
+            <div class="intro-proceso__caja-pasos">
+                <h2 class="intro-proceso__title title">Proceso de adopción</h2>
+                <div class="intro-proceso__paso">
+                    <img src="./img/proceso-uno.png" alt="1">
+                    <h3 class="subtitle">Conocé los requisitos</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum excepturi, quod fuga alias
+                        repellendus nemo. Rem eligendi soluta numquam dolores error, vel cumque consequatur commodi
+                        dolore accusantium odio aspernatur quaerat..</p>
+                </div>
+                <div class="intro-proceso__paso">
+                    <img src="./img/proceso-dos.png" alt="2">
+                    <h3 class="subtitle">Solicitá la adopción</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque perspiciatis repudiandae minima
+                        tempore. Eius autem error, veritatis perferendis labore id praesentium at quam fuga laudantium
+                        ea, facere voluptate sapiente voluptas./p>
+                </div>
+                <div class="intro-proceso__paso">
+                    <img src="./img/proceso-tres.png" alt="3">
+                    <h3 class="subtitle">Primer encuentro</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae delectus obcaecati maiores
+                        cupiditate! Labore, sunt. Impedit sapiente modi sit ex. Sit tempora incidunt illum officiis
+                        cumque odit numquam, eos animi!</p>
+                </div>
+            </div>
+            <button class="intro-proceso__btn btn">Conocer más</button>
+        </section>
+
+        <section class="intro-en-adopcion width-desktop">
+            <h2 class="intro-en-adopcion__title title">En adopción</h2>
+            <div id="carouselExample" class="carousel slide">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="carousel__card">
+                            <div>
+                                <img src="./img/carousel-adopcion-1.jpg" alt="gatito">
+                                <div class="carousel__txt">
+                                    <h3 class="title">Ámbar</h3>
+                                    <p class="carousel__card-txt">Hembra <br> 4 meses</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel__card">
+                            <div>
+                                <img src="./img/carousel-adopcion-2.jpg" alt="perrito">
+                                <div class="carousel__txt">
+                                    <h3 class="title">Thor</h3>
+                                    <p class="carousel__card-txt">Macho <br> 3 meses</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel__card"> <!--card-->
+                            <div>
+                                <img src="./img/carousel-adopcion-3.jpg" alt="gatito">
+                                <div class="carousel__txt">
+                                    <h3 class="title--wh carousel__card-title--wh">Chipi</h3>
+                                    <p class="carousel__card-txt">Macho <br> 5 años</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel__card">
+                            <div>
+                                <img src="./img/carousel-adopcion-4.jpg" alt="perrito">
+                                <div class="carousel__txt">
+                                    <h3 class="title">Milo</h3>
+                                    <p class="carousel__card-txt">Macho <br> 2 años</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="prev">
+                    <span aria-hidden="true"><i class="fa-solid fa-chevron-left carousel__chevron"></i></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="next">
+                    <span aria-hidden="true"><i class="fa-solid fa-chevron-right carousel__chevron"></i></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <button class="intro-en-adopcion__btn btn">Ver todos</button>
+        </section>
+
+        <section class="intro-colaborar width-desktop">
+            <div class="intro-colaborar__content">
+                <h2 class="intro-colaborar__title title">Podés ser parte</h2>
+                <p class="intro-colaborar__txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis reprehenderit doloribus quae ipsum, adipisci saepe natus ullam fugiat minus officiis ab, voluptate vero placeat. Minus similique optio numquam inventore veniam voluptatibus quis dicta rerum. Nemo ut tenetur voluptas, omnis neque eos possimus natus incidunt! Ab necessitatibus cum delectus aut, asperiores natus ex pariatur dolore similique iste doloremque, unde minima vitae veniam voluptatum rerum, dolor soluta reprehenderit nesciunt? Porro, ipsa hic!</p>
+                <button class="intro-colaborar__btn btn">Quiero colaborar</button>
+            </div>
+            <div class="intro-colaborar__caja-img"><img src="./img/index-colaborar.jpg" alt=""></div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer__content">
+            <div class="footer__rrss">
+                <a href="https://www.facebook.com" class="footer__item" target="_blank"><i
+                        class="fa-brands fa-facebook-f footer__icon"></i></a>
+                <a href="https://www.instagram.com" class="footer__item" target="_blank"><i
+                        class="fa-brands fa-instagram footer__icon"></i></a>
+                <a href="https://www.twitter.com" class="footer__item" target="_blank"><i
+                        class="fa-brands fa-twitter footer__icon"></i></a>
+            </div>
+            <div class="footer__about-us">
+                <h5 class="footer__title">About us</h5>
+                <p class="footer__txt-about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus nostrum
+                    ducimus dicta blanditiis maxime reprehenderit sint est numquam distinctio, totam error rerum
+                    suscipit excepturi vitae animi veniam neque pariatur nihil officiis iste doloremque. Nemo obcaecati
+                    fugiat earum, blanditiis tenetur animi.</p>
+            </div>
+            <div class="footer__contact">
+                <h5 class="footer__title">Contacto</h5>
+                <p class="footer__txt-contact">Podés comunicarte con nosotros completando el <a
+                        href="./pages/contacto.html">formulario de contacto</a> o escribinos a kalitorefugios@gmail.com
+                </p>
+            </div>
+            <img src="./img/icon-sin-fondo.png" class="footer__logo" alt="logo">
+        </div>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/59b3bb344d.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
