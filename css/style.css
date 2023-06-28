@@ -438,16 +438,6 @@ img {
 
 /*---proceso-de-adopcion.html section pasos---*/
 /*<mobile>*/
-
-
-/*desktop*/
-@media(min-width:1024px){
-    .accordion{
-        display: none;
-    }
-}
-
-/*---proceso-de-adopcion.html section adopcion responsables---*/
 .proceso-pasos__title{
     text-align: center;
     margin-top: 25px;
@@ -486,6 +476,12 @@ img {
     padding:0 30px 35px 30px;
 }
 
+/*desktop*/
+@media(min-width:1024px){
+
+}
+
+/*---proceso-de-adopcion.html section adopcion responsable---*/
 .proceso-adopcion__title{
     text-align: center;
 }
@@ -506,6 +502,7 @@ img {
 .proceso-adopcion__txt{
     color: #ffffff;
 }
+
 
 /*---footer---*/
 /*<mobile>*/
