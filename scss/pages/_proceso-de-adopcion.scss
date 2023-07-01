@@ -13,7 +13,7 @@
         display: flex;
         flex-direction: column;
         margin: 15px 15px 30px 15px;
-        background-color: #f7f7f7;
+        background-color: $color-gris-kalito;
     }
 
     &__tarjeta-requisitos {
@@ -79,7 +79,7 @@
 .proceso-adopcion {
     display: flex;
     flex-direction: column;
-    background-image: url(../../img/proceso-adopcion.jpg);
+    background-image: url(../img/proceso-adopcion.jpg);
     background-position: center;
     background-size: cover;
     padding-top: 25px;

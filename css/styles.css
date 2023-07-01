@@ -190,7 +190,7 @@ img {
 .bienvenida {
   display: flex;
   flex-direction: column;
-  background-image: url(../../img/index-bienvenida-mobile.jpg);
+  background-image: url(../img/index-bienvenida-mobile.jpg);
   background-size: cover;
   background-position: 0%;
   height: 600px;
@@ -221,7 +221,7 @@ img {
     visibility: visible;
     grid-area: img;
     width: 500px;
-    background-image: url(../../img/index-bienvenida.jpg);
+    background-image: url(../img/index-bienvenida.jpg);
     background-size: cover;
     border-radius: 0 0 0 150px;
   }
@@ -350,7 +350,7 @@ img {
     grid-row: span 2;
     width: 450px;
     height: 300px;
-    background-image: url(../../img/index-colaborar.jpg);
+    background-image: url(../img/index-colaborar.jpg);
     background-size: cover;
     background-position: 80% 20%;
     border-radius: 0 150px 0 150px;
@@ -430,7 +430,7 @@ img {
 .proceso-adopcion {
   display: flex;
   flex-direction: column;
-  background-image: url(../../img/proceso-adopcion.jpg);
+  background-image: url(../img/proceso-adopcion.jpg);
   background-position: center;
   background-size: cover;
   padding-top: 25px;
