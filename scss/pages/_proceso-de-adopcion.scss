@@ -1,0 +1,62 @@
+.proceso-pasos {
+
+    &__title {
+        text-align: center;
+        margin-top: 25px;
+    }
+
+    &__tarjeta {
+        display: flex;
+        flex-direction: column;
+        margin: 15px 15px 30px 15px;
+        background-color: #f7f7f7;
+    }
+
+    &__tarjeta-requisitos {
+        border-radius: 50px 0 50px 0;
+    }
+
+    &__tarjeta-solicitar {
+        border-radius: 30px;
+    }
+
+    &__tarjeta-encuentro {
+        border-radius: 0 50px 0 50px;
+    }
+
+    &__btn {
+        width: 100%;
+        border: none;
+        background-color: transparent;
+        height: 50px;
+        margin-top: 25px;
+        padding-left: 30px;
+        text-align: left;
+    }
+
+    &__body{
+        padding:0 30px 35px 30px;
+    }
+
+}
+
+@media(min-width:1024px){
+
+}
+
+.proceso-adopcion{
+    display: flex;
+    flex-direction: column;
+    background-image: url(../../img/proceso-adopcion.jpg);
+    background-position: center;
+    background-size: cover;
+    padding-top: 25px;
+
+    &__title{
+    text-align: center;
+    }
+
+    &__content{
+        padding: 20px 30px ;
+    }
+}

@@ -1,0 +1,48 @@
+$color-naranja-kalito: #ff7900;
+$color-negro-kalito: #121210;
+$color-gris-kalito: #f7f7f7;
+$color-blanco-kalito: #ffffff;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    color: $color-negro-kalito;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.txt-white {
+    color: $color-blanco-kalito
+}
+
+@media(min-width:1024px) {
+    body {
+        padding-top: 85px;
+
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0 50px;
+        }
+
+        .width-desktop {
+            max-width: 1100px;
+        }
+    }
+}

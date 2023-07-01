@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/styles.css">
     <link rel="shortcut icon" href="../img/icon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,12 +18,12 @@
 <body>
     <header>
         <nav class="navbar">
-            <div class="container">
-                <h1 class="navbar__title">Kalito</h1>
-                <a href="../index.html"><img src="../img/logo-nav.png" class="navbar__logo" alt="Logo"></a>
+            <div class="navbar-mobile container">
+                <h1 class="navbar-mobile__title">Kalito</h1>
+                <a href="../index.html"><img src="../img/logo-nav.png" class="navbar-mobile__logo" alt="Logo"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <i class="fa-solid fa-bars navbar__bars"></i>
+                    <i class="fa-solid fa-bars navbar-mobile__bars"></i>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
@@ -44,12 +44,12 @@
                         </li>
                     </ul>
                 </div>
-                <ul class="nav__desktop">
-                    <li><a href="../index.html" class="nav__item">Home</a></li>
-                    <li><a href="./proceso-de-adopcion.html" class="nav__item">Proceso de adopción</a></li>
-                    <li><a href="./adoptar.html" class="nav__item">Adoptar</a></li>
-                    <li><a href="./colaborar.html" class="nav__item">Colaborar</a></li>
-                    <li><a href="./contacto.html" class="nav__item">Contacto</a></li>
+                <ul class="navbar-desktop">
+                    <li><a href="../index.html" class="navbar-desktop__item">Home</a></li>
+                    <li><a href="./proceso-de-adopcion.html" class="navbar-desktop__item">Proceso de adopción</a></li>
+                    <li><a href="./adoptar.html" class="navbar-desktop__item">Adoptar</a></li>
+                    <li><a href="./colaborar.html" class="navbar-desktop__item">Colaborar</a></li>
+                    <li><a href="./contacto.html" class="navbar-desktop__item">Contacto</a></li>
                 </ul>
             </div>
         </nav>
@@ -58,7 +58,7 @@
     <main>
         <section class="proceso-pasos">
             <h2 class="proceso-pasos__title title">Proceso de adopción</h2>
-            <div class="proceso-pasos__tarjeta proceso-pasos__tarjeta-req">
+            <div class="proceso-pasos__tarjeta proceso-pasos__tarjeta-requisitos">
                 <p>
                     <button class="proceso-pasos__btn subtitle" type="button" data-bs-toggle="collapse"
                         data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
@@ -79,7 +79,7 @@
                 </div>
             </div>
 
-            <div class="proceso-pasos__tarjeta proceso-pasos__tarjeta-sol">
+            <div class="proceso-pasos__tarjeta proceso-pasos__tarjeta-solicitar">
                 <p>
                     <button class="proceso-pasos__btn subtitle" type="button" data-bs-toggle="collapse"
                         data-bs-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample">
@@ -93,7 +93,7 @@
                 </div>
             </div>
 
-            <div class="proceso-pasos__tarjeta proceso-pasos__tarjeta-enc">
+            <div class="proceso-pasos__tarjeta proceso-pasos__tarjeta-encuentro">
                 <p>
                     <button class="proceso-pasos__btn subtitle" type="button" data-bs-toggle="collapse"
                         data-bs-target="#collapseExample3" aria-expanded="false" aria-controls="collapseExample">
@@ -109,10 +109,10 @@
         </section>
 
         <section class="proceso-adopcion">
-            <h2 class="proceso-adopcion__title title title--wh">Adopción responsable</h2>
+            <h2 class="proceso-adopcion__title title txt-white">Adopción responsable</h2>
             <div class="proceso-adopcion__content">
-                <h3 class="subtitle subtitle--wh">¿Qué es la adopción responsable?</h3>
-                <p class="proceso-adopcion__txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum, facere? Vero explicabo magni
+                <h3 class="subtitle txt-white">¿Qué es la adopción responsable?</h3>
+                <p class="txt-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum, facere? Vero explicabo magni
                     sequi at tenetur adipisci voluptatem repellat soluta fugiat numquam illo quod ipsam, distinctio iure
                     sapiente esse est maxime provident a itaque deserunt, voluptates, vel nisi? Necessitatibus culpa
                     illum commodi eaque ipsa magni eius sed veritatis quas harum consequuntur maiores corrupti velit
@@ -129,7 +129,7 @@
     </main>
 
     <footer>
-        <div class="footer__content">
+        <div class="footer">
             <div class="footer__rrss">
                 <a href="https://www.facebook.com" class="footer__item" target="_blank"><i
                         class="fa-brands fa-facebook-f footer__icon"></i></a>

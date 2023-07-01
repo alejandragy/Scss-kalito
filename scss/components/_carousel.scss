@@ -1,0 +1,48 @@
+.carousel {
+    padding: 0 45px 0 45px;
+
+    &-item {
+        width: 65vw;
+        max-width: 280px;
+        padding: 0 15px;
+
+        &__card {
+            display: flex;
+            height: 400px;
+
+            img {
+                border-radius: 10%;
+            }
+
+            .carousel-item__txt{
+                position: relative;
+                bottom: 150px;
+                padding: 20px;
+            }
+        }
+    }
+
+    &__chevron{
+            color: $color-negro-kalito;
+            font-size: 35px;
+    }
+}
+
+@media(min-width:1024px) {
+    .carousel {
+        padding: 0 100px 0 100px;
+
+        &-inner {
+            display: flex;
+            width: 1000px;
+
+            .carousel-item {
+                display: block;
+                margin-right: 0;
+                flex: 0 0 calc(100%/4);
+                width: 100%;
+                padding: 10px;
+            }
+        }
+    }
+}

@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/styles.css">
     <link rel="shortcut icon" href="./img/icon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,12 +18,12 @@
 <body>
     <header>
         <nav class="navbar">
-            <div class="container">
-                <h1 class="navbar__title">Kalito</h1>
-                <a href="./index.html"><img src="./img/logo-nav.png" class="navbar__logo" alt="Logo"></a>
+            <div class="navbar-mobile container">
+                <h1 class="navbar-mobile__title">Kalito</h1>
+                <a href="./index.html"><img src="./img/logo-nav.png" class="navbar-mobile__logo" alt="Logo"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <i class="fa-solid fa-bars navbar__bars"></i>
+                    <i class="fa-solid fa-bars navbar-mobile__bars"></i>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
@@ -44,12 +44,12 @@
                         </li>
                     </ul>
                 </div>
-                <ul class="nav__desktop">
-                    <li><a href="./index.html" class="nav__item">Home</a></li>
-                    <li><a href="./pages/proceso-de-adopcion.html" class="nav__item">Proceso de adopción</a></li>
-                    <li><a href="./pages/adoptar.html" class="nav__item">Adoptar</a></li>
-                    <li><a href="./pages/colaborar.html" class="nav__item">Colaborar</a></li>
-                    <li><a href="./pages/contacto.html" class="nav__item">Contacto</a></li>
+                <ul class="navbar-desktop">
+                    <li><a href="./index.html" class="navbar-desktop__item">Home</a></li>
+                    <li><a href="./pages/proceso-de-adopcion.html" class="navbar-desktop__item">Proceso de adopción</a></li>
+                    <li><a href="./pages/adoptar.html" class="navbar-desktop__item">Adoptar</a></li>
+                    <li><a href="./pages/colaborar.html" class="navbar-desktop__item">Colaborar</a></li>
+                    <li><a href="./pages/contacto.html" class="navbar-desktop__item">Contacto</a></li>
                 </ul>
             </div>
         </nav>
@@ -57,32 +57,32 @@
 
     <main>
         <section class="bienvenida width-desktop">
-            <h2 class="bienvenida__title title">El amor es una palabra de cuatro patas</h2>
+            <h2 class="title txt-white">El amor es una palabra de cuatro patas</h2>
             <div class="bienvenida__caja-img"></div>
-            <p class="bienvenida__txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident recusandae id
+            <p class="txt-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident recusandae id
                 aliquam, quaerat voluptate quas consequuntur minus maiores magnam perspiciatis officia, dolor atque ab
                 laudantium ad perferendis suscipit illo placeat?</p>
             <button class="bienvenida__btn btn">Quiero adoptar</button>
         </section>
 
         <section class="antes-adoptar">
-            <div class="antes-adoptar__content">
-                <h2 class="antes-adoptar__title title">Antes de adoptar</h2>
-                <div class="antes-adoptar__caja-txt">
-                    <p class="antes-adoptar__txt"> Kalito es un puente entre distintos refugios y adoptantes.
+            <div class="antes-adoptar-content">
+                <h2 class="title txt-white">Antes de adoptar</h2>
+                <div class="antes-adoptar-content__caja-txt">
+                    <p> Kalito es un puente entre distintos refugios y adoptantes.
                         Facilitamos este contacto a través de nuestro proceso de adopción que se compone de tres etapas:
                         <br>
                         1. Conocer los requisitos <br> 2. Solicitar adopción <br> 3. Primer encuentro <br> Te invitamos
                         que conozcas un poco más de qué se trata cada uno de estos pasos
                     </p>
                 </div>
-                <button class="antes-adoptar__btn btn">Ver proceso de adopción</button>
+                <button class="antes-adoptar-content__btn btn">Ver proceso de adopción</button>
             </div>
         </section>
 
         <section class="intro-proceso width-desktop">
             <div class="intro-proceso__caja-pasos">
-                <h2 class="intro-proceso__title title">Proceso de adopción</h2>
+                <h2 class="title">Proceso de adopción</h2>
                 <div class="intro-proceso__paso">
                     <img src="./img/proceso-uno.png" alt="1">
                     <h3 class="subtitle">Conocé los requisitos</h3>
@@ -113,45 +113,45 @@
             <div id="carouselExample" class="carousel slide">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <div class="carousel__card">
+                        <div class="carousel-item__card">
                             <div>
                                 <img src="./img/carousel-adopcion-1.jpg" alt="gatito">
-                                <div class="carousel__txt">
+                                <div class="carousel-item__txt">
                                     <h3 class="title">Ámbar</h3>
-                                    <p class="carousel__card-txt">Hembra <br> 4 meses</p>
+                                    <p>Hembra <br> 4 meses</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <div class="carousel__card">
+                        <div class="carousel-item__card">
                             <div>
                                 <img src="./img/carousel-adopcion-2.jpg" alt="perrito">
-                                <div class="carousel__txt">
+                                <div class="carousel-item__txt">
                                     <h3 class="title">Thor</h3>
-                                    <p class="carousel__card-txt">Macho <br> 3 meses</p>
+                                    <p>Macho <br> 3 meses</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <div class="carousel__card"> <!--card-->
+                        <div class="carousel-item__card">
                             <div>
                                 <img src="./img/carousel-adopcion-3.jpg" alt="gatito">
-                                <div class="carousel__txt">
-                                    <h3 class="title--wh carousel__card-title--wh">Chipi</h3>
-                                    <p class="carousel__card-txt">Macho <br> 5 años</p>
+                                <div class="carousel-item__txt">
+                                    <h3 class="title txt-white">Chipi</h3>
+                                    <p>Macho <br> 5 años</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <div class="carousel__card">
+                        <div class="carousel-item__card">
                             <div>
                                 <img src="./img/carousel-adopcion-4.jpg" alt="perrito">
-                                <div class="carousel__txt">
+                                <div class="carousel-item__txt">
                                     <h3 class="title">Milo</h3>
-                                    <p class="carousel__card-txt">Macho <br> 2 años</p>
+                                    <p>Macho <br> 2 años</p>
                                 </div>
                             </div>
                         </div>
@@ -173,8 +173,8 @@
 
         <section class="intro-colaborar width-desktop">
             <div class="intro-colaborar__content">
-                <h2 class="intro-colaborar__title title">Podés ser parte</h2>
-                <p class="intro-colaborar__txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis reprehenderit doloribus quae ipsum, adipisci saepe natus ullam fugiat minus officiis ab, voluptate vero placeat. Minus similique optio numquam inventore veniam voluptatibus quis dicta rerum. Nemo ut tenetur voluptas, omnis neque eos possimus natus incidunt! Ab necessitatibus cum delectus aut, asperiores natus ex pariatur dolore similique iste doloremque, unde minima vitae veniam voluptatum rerum, dolor soluta reprehenderit nesciunt? Porro, ipsa hic!</p>
+                <h2 class="title">Podés ser parte</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis reprehenderit doloribus quae ipsum, adipisci saepe natus ullam fugiat minus officiis ab, voluptate vero placeat. Minus similique optio numquam inventore veniam voluptatibus quis dicta rerum. Nemo ut tenetur voluptas, omnis neque eos possimus natus incidunt! Ab necessitatibus cum delectus aut, asperiores natus ex pariatur dolore similique iste doloremque, unde minima vitae veniam voluptatum rerum, dolor soluta reprehenderit nesciunt? Porro, ipsa hic!</p>
             </div>
             <div class="intro-colaborar__caja-img"></div>
             <button class="intro-colaborar__btn btn">Quiero colaborar</button>
@@ -182,7 +182,7 @@
     </main>
 
     <footer>
-        <div class="footer__content">
+        <div class="footer">
             <div class="footer__rrss">
                 <a href="https://www.facebook.com" class="footer__item" target="_blank"><i
                         class="fa-brands fa-facebook-f footer__icon"></i></a>

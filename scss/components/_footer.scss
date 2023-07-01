@@ -1,0 +1,41 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+    border-top: #e4e4e4 solid 0.1px;
+
+    &__rrss {
+        display: flex;
+        gap: 3rem;
+        margin-bottom: 25px;
+
+        .footer__icon {
+            color: $color-naranja-kalito;
+            font-size: 30px;
+        }
+    }
+
+    &__title {
+        text-align: center;
+        font-size: 1.1rem;
+        font-weight: bold;
+        padding-bottom: 15px;
+    }
+
+    &__about-us,
+    &__contact {
+        padding: 12px 40px;
+    }
+
+    &__contact a {
+        color: $color-naranja-kalito;
+        font-weight: bold;
+        font-size: 1rem;
+        text-decoration: none;
+    }
+
+    &__logo{
+        width: 200px;
+    }
+}
