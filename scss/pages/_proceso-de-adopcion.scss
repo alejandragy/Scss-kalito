@@ -1,8 +1,12 @@
 .proceso-pasos {
 
-    &__title {
+    h2 {
         text-align: center;
         margin-top: 25px;
+    }
+
+    h3 {
+        display: none;
     }
 
     &__tarjeta {
@@ -34,17 +38,45 @@
         text-align: left;
     }
 
-    &__body{
-        padding:0 30px 35px 30px;
+    &__body {
+        padding: 0 30px 35px 30px;
     }
 
 }
 
-@media(min-width:1024px){
+@media(min-width:1024px) {
+    .proceso-pasos {
+        &-desktop {
+            display: flex;
+            justify-content: space-between;
 
+            h3 {
+                display: flex;
+                justify-content: center;
+                margin-top: 10px;
+            }
+
+            button {
+                display: none;
+            }
+
+            .collapse {
+                display: flex;
+            }
+
+            .proceso-pasos__tarjeta {
+                width: 100%;
+                margin: 30px 0 30px 0;
+
+                &-solicitar {
+                    margin: 30px;
+                }
+            }
+        }
+    }
 }
 
-.proceso-adopcion{
+.proceso-adopcion {
     display: flex;
     flex-direction: column;
     background-image: url(../../img/proceso-adopcion.jpg);
@@ -52,11 +84,13 @@
     background-size: cover;
     padding-top: 25px;
 
-    &__title{
-    text-align: center;
+    &__title {
+        text-align: center;
     }
 
-    &__content{
-        padding: 20px 30px ;
+    &__content {
+        padding: 20px 30px;
     }
 }
+
+@media(min-width:1024px) {}

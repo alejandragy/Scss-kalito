@@ -368,9 +368,12 @@ img {
     grid-column: span 2;
   }
 }
-.proceso-pasos__title {
+.proceso-pasos h2 {
   text-align: center;
   margin-top: 25px;
+}
+.proceso-pasos h3 {
+  display: none;
 }
 .proceso-pasos__tarjeta {
   display: flex;
@@ -400,6 +403,30 @@ img {
   padding: 0 30px 35px 30px;
 }
 
+@media (min-width: 1024px) {
+  .proceso-pasos-desktop {
+    display: flex;
+    justify-content: space-between;
+  }
+  .proceso-pasos-desktop h3 {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  .proceso-pasos-desktop button {
+    display: none;
+  }
+  .proceso-pasos-desktop .collapse {
+    display: flex;
+  }
+  .proceso-pasos-desktop .proceso-pasos__tarjeta {
+    width: 100%;
+    margin: 30px 0 30px 0;
+  }
+  .proceso-pasos-desktop .proceso-pasos__tarjeta-solicitar {
+    margin: 30px;
+  }
+}
 .proceso-adopcion {
   display: flex;
   flex-direction: column;
