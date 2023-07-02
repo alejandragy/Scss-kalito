@@ -442,4 +442,45 @@ img {
   padding: 20px 30px;
 }
 
+@media (min-width: 1024px) {
+  .proceso-adopcion {
+    background-image: none;
+    display: grid;
+    grid-template-columns: 420px 1fr;
+    grid-template-rows: 50px 1fr;
+    grid-template-areas: "title title" "img caja";
+    height: 650px;
+    margin: 75px 0 60px 0;
+  }
+  .proceso-adopcion__title {
+    grid-area: title;
+    grid-column: 2;
+    color: #121210;
+  }
+  .proceso-adopcion h3 {
+    color: #121210;
+    padding: 40px 60px 0 60px;
+  }
+  .proceso-adopcion p {
+    color: #121210;
+    padding: 0 60px;
+  }
+  .proceso-adopcion__content {
+    grid-area: caja;
+    background-color: #f7f7f7;
+    border-radius: 0 150px 0 150px;
+  }
+  .proceso-adopcion__caja-img {
+    grid-area: img;
+    width: 450px;
+    height: 500px;
+    background-image: url(../img/proceso-adopcion-desktop.jpg);
+    background-size: cover;
+    background-position: 80% 20%;
+    border-radius: 0 150px 0 150px;
+    position: relative;
+    bottom: 80px;
+  }
+}
+
 /*# sourceMappingURL=styles.css.map */
