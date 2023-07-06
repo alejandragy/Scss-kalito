@@ -6,5 +6,25 @@
     font-weight: bold;
     border-radius: 30px;
     border: none;
-    background-color: $color-naranja-kalito;
+    background-color: $c-secundario;
+    color: $c-blanco;
+
+    &:hover {
+        background-color: $c-principal;
+        color: $c-blanco;
+    }
+}
+
+.en-adopcion-filtros__btn {
+    height: 30px;
+    border: none;
+    background-color: $c-gris;
+    color: $c-negro;
+    padding: 3px;
+    border-radius: 5px;
+
+    &:hover {
+        background-color: $c-principal;
+        color: $c-blanco;
+    }
 }

@@ -1,0 +1,27 @@
+.card-adopt{
+    display: flex;
+    flex-direction: column;
+    width: 170px;
+    height: 250px;
+    padding: 0 10px 0 10px;
+
+            img {
+                border-radius: 10%;
+            }
+
+            &__txt{
+                position: relative;
+                bottom: 110px;
+                padding: 14px;
+
+                h3{
+                    position: relative;
+                    bottom: 120px;
+                    font-size: 1.5rem;
+                }
+                p{
+                    font-size: 1.1rem;
+                    height: 0.5rem;
+                }
+            }
+}

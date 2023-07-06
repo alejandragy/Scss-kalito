@@ -108,7 +108,25 @@ img {
   font-weight: bold;
   border-radius: 30px;
   border: none;
+  background-color: #ff8b26;
+  color: #ffffff;
+}
+.btn:hover {
   background-color: #ff7900;
+  color: #ffffff;
+}
+
+.en-adopcion-filtros__btn {
+  height: 30px;
+  border: none;
+  background-color: #f7f7f7;
+  color: #121210;
+  padding: 3px;
+  border-radius: 5px;
+}
+.en-adopcion-filtros__btn:hover {
+  background-color: #ff7900;
+  color: #ffffff;
 }
 
 .carousel {
@@ -152,6 +170,31 @@ img {
     padding: 10px;
   }
 }
+.card-adopt {
+  display: flex;
+  flex-direction: column;
+  width: 170px;
+  height: 250px;
+  padding: 0 10px 0 10px;
+}
+.card-adopt img {
+  border-radius: 10%;
+}
+.card-adopt__txt {
+  position: relative;
+  bottom: 110px;
+  padding: 14px;
+}
+.card-adopt__txt h3 {
+  position: relative;
+  bottom: 120px;
+  font-size: 1.5rem;
+}
+.card-adopt__txt p {
+  font-size: 1.1rem;
+  height: 0.5rem;
+}
+
 .footer {
   display: flex;
   flex-direction: column;
@@ -187,6 +230,35 @@ img {
   width: 200px;
 }
 
+@media (min-width: 1024px) {
+  .footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "about-us contact logo" "about-us contact logo";
+  }
+  .footer__about-us {
+    grid-area: about-us;
+    grid-row: span;
+  }
+  .footer__contact {
+    grid-area: contact;
+    grid-column: 2;
+    grid-row: 1;
+  }
+  .footer__rrss {
+    grid-area: contact;
+    grid-column: 2;
+    grid-row: 2;
+    display: flex;
+    justify-content: center;
+  }
+  .footer__logo {
+    grid-area: logo;
+    grid-row: span;
+    justify-self: center;
+  }
+}
 .bienvenida {
   display: flex;
   flex-direction: column;
@@ -469,6 +541,7 @@ img {
     grid-area: caja;
     background-color: #f7f7f7;
     border-radius: 0 150px 0 150px;
+    width: 600px;
   }
   .proceso-adopcion__caja-img {
     grid-area: img;
@@ -481,6 +554,35 @@ img {
     position: relative;
     bottom: 80px;
   }
+}
+.en-adopcion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+.en-adopcion h2 {
+  margin-top: 25px;
+}
+.en-adopcion-filtros {
+  display: flex;
+  margin-top: 25px;
+}
+.en-adopcion-filtros p {
+  font-size: 1rem;
+  margin-right: 15px;
+  margin-top: 2px;
+}
+.en-adopcion-filtros__btn {
+  margin: 0 5px 0 5px;
+  font-size: 1rem;
+}
+.en-adopcion__cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 40px;
 }
 
 /*# sourceMappingURL=styles.css.map */

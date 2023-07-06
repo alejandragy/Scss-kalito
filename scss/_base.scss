@@ -1,14 +1,15 @@
-$color-naranja-kalito: #ff7900;
-$color-negro-kalito: #121210;
-$color-gris-kalito: #f7f7f7;
-$color-blanco-kalito: #ffffff;
+$c-principal: #ff7900;
+$c-secundario: #ff8b26;
+$c-negro: #121210;
+$c-gris: #f7f7f7;
+$c-blanco: #ffffff;
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     list-style: none;
-    color: $color-negro-kalito;
+    color: $c-negro;
     font-family: 'Nunito Sans', sans-serif;
 }
 
@@ -27,7 +28,7 @@ img {
 }
 
 .txt-white {
-    color: $color-blanco-kalito
+    color: $c-blanco;
 }
 
 @media(min-width:1024px) {

@@ -11,7 +11,7 @@
         margin-bottom: 25px;
 
         .footer__icon {
-            color: $color-naranja-kalito;
+            color: $c-principal;
             font-size: 30px;
         }
     }
@@ -29,7 +29,7 @@
     }
 
     &__contact a {
-        color: $color-naranja-kalito;
+        color: $c-principal;
         font-weight: bold;
         font-size: 1rem;
         text-decoration: none;
@@ -37,5 +37,40 @@
 
     &__logo{
         width: 200px;
+    }
+}
+
+@media(min-width:1024px){
+    .footer{
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        "about-us contact logo"
+        "about-us contact logo";
+
+        &__about-us{
+            grid-area: about-us;
+            grid-row: span ;
+        }
+
+        &__contact{
+            grid-area: contact;
+            grid-column: 2;
+            grid-row: 1;
+        }
+        &__rrss{
+            grid-area: contact;
+            grid-column: 2;
+            grid-row: 2;
+            display: flex;
+            justify-content: center;
+        }
+
+        &__logo{
+            grid-area: logo;
+            grid-row: span;
+            justify-self: center;
+        }
     }
 }
