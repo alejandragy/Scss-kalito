@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -123,8 +124,10 @@ img {
   color: #121210;
   padding: 3px;
   border-radius: 5px;
+  margin: 0 5px 0 5px;
+  font-size: 1rem;
 }
-.en-adopcion-filtros__btn:hover {
+.en-adopcion-filtros__btn:hover, .en-adopcion-filtros__btn:focus {
   background-color: #ff7900;
   color: #ffffff;
 }
@@ -440,18 +443,30 @@ img {
     grid-column: span 2;
   }
 }
+/*--- proceso de adopcion: section pasos ---*/
 .proceso-pasos h2 {
   text-align: center;
   margin-top: 25px;
-}
-.proceso-pasos h3 {
-  display: none;
 }
 .proceso-pasos__tarjeta {
   display: flex;
   flex-direction: column;
   margin: 15px 15px 30px 15px;
   background-color: #f7f7f7;
+}
+.proceso-pasos__tarjeta img {
+  display: none;
+}
+.proceso-pasos__tarjeta h3 {
+  display: none;
+}
+.proceso-pasos__tarjeta button {
+  border: none;
+  background-color: transparent;
+  height: 35px;
+  margin-top: 25px;
+  margin: 30px;
+  text-align: left;
 }
 .proceso-pasos__tarjeta-requisitos {
   border-radius: 50px 0 50px 0;
@@ -462,43 +477,67 @@ img {
 .proceso-pasos__tarjeta-encuentro {
   border-radius: 0 50px 0 50px;
 }
-.proceso-pasos__btn {
-  width: 100%;
-  border: none;
-  background-color: transparent;
-  height: 50px;
-  margin-top: 25px;
-  padding-left: 30px;
-  text-align: left;
-}
-.proceso-pasos__body {
+.proceso-pasos__tarjeta .proceso-pasos__body {
   padding: 0 30px 35px 30px;
 }
+.proceso-pasos__tarjeta .proceso-pasos__body .txt-negrita {
+  font-weight: bold;
+}
+.proceso-pasos__tarjeta .proceso-pasos__body .txt-cprincipal {
+  font-weight: bold;
+  color: #ff7900;
+}
 
-@media (min-width: 1024px) {
-  .proceso-pasos-desktop {
+@media (min-width: 678px) {
+  .proceso-pasos-tablet-desktop {
     display: flex;
-    justify-content: space-between;
-  }
-  .proceso-pasos-desktop h3 {
-    display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    margin-top: 10px;
+    width: 100%;
   }
-  .proceso-pasos-desktop button {
-    display: none;
-  }
-  .proceso-pasos-desktop .collapse {
-    display: flex;
-  }
-  .proceso-pasos-desktop .proceso-pasos__tarjeta {
+  .proceso-pasos-tablet-desktop .proceso-pasos__tarjeta {
     width: 100%;
     margin: 30px 0 30px 0;
+    height: 75%;
   }
-  .proceso-pasos-desktop .proceso-pasos__tarjeta-solicitar {
+  .proceso-pasos-tablet-desktop .proceso-pasos__tarjeta .collapse {
+    display: flex;
+  }
+  .proceso-pasos-tablet-desktop .proceso-pasos__tarjeta .proceso-pasos__head {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 80px;
+  }
+  .proceso-pasos-tablet-desktop .proceso-pasos__tarjeta .proceso-pasos__head button {
+    display: none;
+  }
+  .proceso-pasos-tablet-desktop .proceso-pasos__tarjeta .proceso-pasos__head img {
+    display: block;
+    position: relative;
+    bottom: 100px;
+    width: 50px;
+    align-self: center;
+  }
+  .proceso-pasos-tablet-desktop .proceso-pasos__tarjeta .proceso-pasos__head h3 {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+  }
+  .proceso-pasos-tablet-desktop .proceso-pasos__tarjeta-solicitar {
     margin: 30px;
   }
 }
+@media (min-width: 1024px) {
+  .proceso-pasos-tablet-desktop {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+/*--- proceso de adopción: section adopción responsable ---*/
 .proceso-adopcion {
   display: flex;
   flex-direction: column;
@@ -521,7 +560,8 @@ img {
     grid-template-columns: 420px 1fr;
     grid-template-rows: 50px 1fr;
     grid-template-areas: "title title" "img caja";
-    height: 650px;
+    width: 100%;
+    height: 75%;
     margin: 75px 0 60px 0;
   }
   .proceso-adopcion__title {
@@ -531,17 +571,17 @@ img {
   }
   .proceso-adopcion h3 {
     color: #121210;
-    padding: 40px 60px 0 60px;
+    padding: 10px 0 0 45px;
   }
   .proceso-adopcion p {
     color: #121210;
-    padding: 0 60px;
+    padding: 0 55px;
   }
   .proceso-adopcion__content {
     grid-area: caja;
     background-color: #f7f7f7;
     border-radius: 0 150px 0 150px;
-    width: 600px;
+    width: 100%;
   }
   .proceso-adopcion__caja-img {
     grid-area: img;
@@ -562,21 +602,27 @@ img {
   justify-content: center;
   margin-bottom: 25px;
 }
+.en-adopcion__caja {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f7f7f7;
+  width: 62vw;
+  min-width: 370px;
+  border-radius: 50px;
+  margin-top: 15px;
+}
 .en-adopcion h2 {
   margin-top: 25px;
 }
-.en-adopcion-filtros {
+.en-adopcion .en-adopcion-filtros {
   display: flex;
-  margin-top: 25px;
+  margin-top: 15px;
 }
-.en-adopcion-filtros p {
+.en-adopcion .en-adopcion-filtros p {
   font-size: 1rem;
   margin-right: 15px;
   margin-top: 2px;
-}
-.en-adopcion-filtros__btn {
-  margin: 0 5px 0 5px;
-  font-size: 1rem;
 }
 .en-adopcion__cards {
   display: flex;
