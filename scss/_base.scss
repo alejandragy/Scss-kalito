@@ -31,6 +31,15 @@ img {
     color: $c-blanco;
 }
 
+.txt-negrita {
+    font-weight: bold;
+}
+
+.txt-cprincipal {
+    font-weight: bold;
+    color: $c-principal; 
+}
+
 @media(min-width:1024px) {
     body {
         padding-top: 85px;

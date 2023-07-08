@@ -1,3 +1,4 @@
+/* --- section bienvenida --- */
 .bienvenida {
     display: flex;
     flex-direction: column;
@@ -8,12 +9,24 @@
 
     h2,
     p {
-        padding: 2rem;
+        padding: 1.5rem;
+    }
+
+    p{
+        font-size: 1.3rem;
     }
 
     &__caja-img,
     &__btn {
         visibility: hidden;
+    }
+}
+
+@media(min-width:678px){
+    .bienvenida{
+        p{ 
+            font-size: 1.7rem;
+        }
     }
 }
 
@@ -30,11 +43,14 @@
         background-image: none;
         height: 400px;
 
-        h2, p {
+        h2, p, span {
             color: $c-negro;
             padding-top: 20px;
         }
 
+        p{
+            font-size: 1.1rem;
+        }
         &__caja-img {
             visibility: visible;
             grid-area: img;
@@ -50,6 +66,7 @@
     }
 }
 
+/* --- section antes de adoptar --- */
 .antes-adoptar {
     position: relative;
     bottom: 95px;
@@ -92,6 +109,7 @@
     }
 }
 
+/* --- section introducción proceso de adopción --- */
 .intro-proceso {
     display: none;
 }
@@ -115,7 +133,7 @@
             background-color: $c-gris;
             border-radius: 200px 0 200px 0;
             padding: 20px 50px;
-            height: 450px;
+            height: 480px;
 
             h2 {
                 grid-column: span 3;
@@ -137,6 +155,7 @@
     }
 }
 
+/* --- section introducción en adopción --- */
 .intro-en-adopcion {
     background-color: $c-gris;
     padding: 50px 0 50px 0;
@@ -158,6 +177,7 @@
     }
 }
 
+/* --- section introducción a colaborar --- */
 .intro-colaborar {
     display: none;
 }
@@ -173,13 +193,13 @@
             "colaborar img"
             "btn img";
         height: 400px;
-        margin-top: 75px;
+        margin: 75px 0 25px 0;
 
         &__content {
             grid-area: colaborar;
             background-color: $c-gris;
             border-radius: 100;
-            height: 350px;
+            height: 390px;
             border-radius: 150px 0 150px 0;
 
             h2{

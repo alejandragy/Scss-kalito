@@ -16,7 +16,7 @@
 
             .carousel-item__txt{
                 position: relative;
-                bottom: 150px;
+                bottom: 140px;
                 padding: 20px;
             }
         }
@@ -28,20 +28,40 @@
     }
 }
 
-@media(min-width:1024px) {
+
+@media(min-width:678px){
     .carousel {
         padding: 0 100px 0 100px;
-
         &-inner {
             display: flex;
-            width: 1000px;
+            width: 500px;
+
+            .carousel-item{
+                display: block;
+                    margin-right: 0;
+                    flex: 0 0 calc(100%/2);
+                    width: 100%;
+                    padding: 10px;
+                &__card{
+                    height: 400px;
+                }
+            }
+        }
+    }
+}
+
+@media(min-width:1024px){
+    .carousel{
+
+        &-inner {
+            width: 100%;
 
             .carousel-item {
-                display: block;
-                margin-right: 0;
                 flex: 0 0 calc(100%/4);
-                width: 100%;
-                padding: 10px;
+
+                &__card{
+                    height: 330px;
+                }
             }
         }
     }

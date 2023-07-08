@@ -6,11 +6,11 @@
     font-weight: bold;
     border-radius: 30px;
     border: none;
-    background-color: $c-secundario;
+    background-color: $c-principal;
     color: $c-blanco;
 
     &:hover {
-        background-color: $c-principal;
+        background-color: $c-secundario;
         color: $c-blanco;
     }
 }

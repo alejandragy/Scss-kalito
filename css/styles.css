@@ -26,6 +26,15 @@ img {
   color: #ffffff;
 }
 
+.txt-negrita {
+  font-weight: bold;
+}
+
+.txt-cprincipal {
+  font-weight: bold;
+  color: #ff7900;
+}
+
 @media (min-width: 1024px) {
   body {
     padding-top: 85px;
@@ -109,11 +118,11 @@ img {
   font-weight: bold;
   border-radius: 30px;
   border: none;
-  background-color: #ff8b26;
+  background-color: #ff7900;
   color: #ffffff;
 }
 .btn:hover {
-  background-color: #ff7900;
+  background-color: #ff8b26;
   color: #ffffff;
 }
 
@@ -149,7 +158,7 @@ img {
 }
 .carousel-item__card .carousel-item__txt {
   position: relative;
-  bottom: 150px;
+  bottom: 140px;
   padding: 20px;
 }
 .carousel__chevron {
@@ -157,20 +166,34 @@ img {
   font-size: 35px;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 678px) {
   .carousel {
     padding: 0 100px 0 100px;
   }
   .carousel-inner {
     display: flex;
-    width: 1000px;
+    width: 500px;
   }
   .carousel-inner .carousel-item {
     display: block;
     margin-right: 0;
-    flex: 0 0 25%;
+    flex: 0 0 50%;
     width: 100%;
     padding: 10px;
+  }
+  .carousel-inner .carousel-item__card {
+    height: 400px;
+  }
+}
+@media (min-width: 1024px) {
+  .carousel-inner {
+    width: 100%;
+  }
+  .carousel-inner .carousel-item {
+    flex: 0 0 25%;
+  }
+  .carousel-inner .carousel-item__card {
+    height: 330px;
   }
 }
 .card-adopt {
@@ -236,32 +259,41 @@ img {
 @media (min-width: 1024px) {
   .footer {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 180px;
+    grid-template-rows: 1fr 40px;
     grid-template-areas: "about-us contact logo" "about-us contact logo";
+    padding: 25px 8%;
+    font-size: 1rem;
+  }
+  .footer__title {
+    padding-bottom: 5px;
   }
   .footer__about-us {
     grid-area: about-us;
-    grid-row: span;
+    padding: 0;
+    align-self: self-start;
+    margin-right: 20px;
   }
   .footer__contact {
     grid-area: contact;
     grid-column: 2;
     grid-row: 1;
+    padding: 0;
+    align-self: self-start;
   }
   .footer__rrss {
     grid-area: contact;
     grid-column: 2;
     grid-row: 2;
-    display: flex;
-    justify-content: center;
+    justify-self: center;
   }
   .footer__logo {
     grid-area: logo;
-    grid-row: span;
     justify-self: center;
+    width: 180px;
   }
 }
+/* --- section bienvenida --- */
 .bienvenida {
   display: flex;
   flex-direction: column;
@@ -272,12 +304,20 @@ img {
 }
 .bienvenida h2,
 .bienvenida p {
-  padding: 2rem;
+  padding: 1.5rem;
+}
+.bienvenida p {
+  font-size: 1.3rem;
 }
 .bienvenida__caja-img, .bienvenida__btn {
   visibility: hidden;
 }
 
+@media (min-width: 678px) {
+  .bienvenida p {
+    font-size: 1.7rem;
+  }
+}
 @media (min-width: 1024px) {
   .bienvenida {
     display: grid;
@@ -288,9 +328,12 @@ img {
     background-image: none;
     height: 400px;
   }
-  .bienvenida h2, .bienvenida p {
+  .bienvenida h2, .bienvenida p, .bienvenida span {
     color: #121210;
     padding-top: 20px;
+  }
+  .bienvenida p {
+    font-size: 1.1rem;
   }
   .bienvenida__caja-img {
     visibility: visible;
@@ -304,6 +347,7 @@ img {
     visibility: visible;
   }
 }
+/* --- section antes de adoptar --- */
 .antes-adoptar {
   position: relative;
   bottom: 95px;
@@ -338,6 +382,7 @@ img {
     display: none;
   }
 }
+/* --- section introducción proceso de adopción --- */
 .intro-proceso {
   display: none;
 }
@@ -358,7 +403,7 @@ img {
     background-color: #f7f7f7;
     border-radius: 200px 0 200px 0;
     padding: 20px 50px;
-    height: 450px;
+    height: 480px;
   }
   .intro-proceso__caja-pasos h2 {
     grid-column: span 3;
@@ -375,6 +420,7 @@ img {
     width: 50px;
   }
 }
+/* --- section introducción en adopción --- */
 .intro-en-adopcion {
   background-color: #f7f7f7;
   padding: 50px 0 50px 0;
@@ -394,6 +440,7 @@ img {
     background-color: #ffffff;
   }
 }
+/* --- section introducción a colaborar --- */
 .intro-colaborar {
   display: none;
 }
@@ -405,13 +452,13 @@ img {
     grid-template-rows: 100px 184px 50px;
     grid-template-areas: "colaborar img" "colaborar img" "btn img";
     height: 400px;
-    margin-top: 75px;
+    margin: 75px 0 25px 0;
   }
   .intro-colaborar__content {
     grid-area: colaborar;
     background-color: #f7f7f7;
     border-radius: 100;
-    height: 350px;
+    height: 390px;
     border-radius: 150px 0 150px 0;
   }
   .intro-colaborar__content h2 {
@@ -480,13 +527,6 @@ img {
 .proceso-pasos__tarjeta .proceso-pasos__body {
   padding: 0 30px 35px 30px;
 }
-.proceso-pasos__tarjeta .proceso-pasos__body .txt-negrita {
-  font-weight: bold;
-}
-.proceso-pasos__tarjeta .proceso-pasos__body .txt-cprincipal {
-  font-weight: bold;
-  color: #ff7900;
-}
 
 @media (min-width: 678px) {
   .proceso-pasos-tablet-desktop {
@@ -499,7 +539,6 @@ img {
   .proceso-pasos-tablet-desktop .proceso-pasos__tarjeta {
     width: 100%;
     margin: 30px 0 30px 0;
-    height: 75%;
   }
   .proceso-pasos-tablet-desktop .proceso-pasos__tarjeta .collapse {
     display: flex;
@@ -525,6 +564,7 @@ img {
     display: flex;
     justify-content: center;
     margin-top: 80px;
+    margin-bottom: 25px;
   }
   .proceso-pasos-tablet-desktop .proceso-pasos__tarjeta-solicitar {
     margin: 30px;
@@ -535,6 +575,9 @@ img {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+  }
+  .proceso-pasos__tarjeta {
+    min-height: 665px;
   }
 }
 /*--- proceso de adopción: section adopción responsable ---*/
