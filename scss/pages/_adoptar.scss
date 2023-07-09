@@ -1,11 +1,11 @@
-.en-adopcion{
+.en-adopcion {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     margin-bottom: 25px;
-    
-    &__caja{
+
+    &__caja-filtros {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -13,20 +13,14 @@
         width: 62vw;
         min-width: 370px;
         border-radius: 50px;
-        margin-top: 15px; 
-    }
-
-    h2{
-        margin-top: 25px;
-        text-align: center;
-    }
-
-    .en-adopcion-filtros{
-        display: flex;
         margin-top: 15px;
 
+        .filtros {
+            display: flex;
+            margin-top: 15px;
+        }
 
-        p{
+        p {
             font-size: 1rem;
             font-weight: bold;
             margin-right: 15px;
@@ -34,11 +28,16 @@
         }
     }
 
-    &__cards{
+    h2 {
+        margin-top: 25px;
+        text-align: center;
+    }
+
+    &__cards {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         margin-top: 40px;
+        gap: 1.5rem;
     }
 }
-

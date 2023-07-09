@@ -22,7 +22,7 @@
     }
 }
 
-@media(min-width:678px){
+@media(min-width:768px){
     .bienvenida{
         p{ 
             font-size: 1.7rem;
@@ -157,23 +157,34 @@
 
 /* --- section introducción en adopción --- */
 .intro-en-adopcion {
-    background-color: $c-gris;
-    padding: 50px 0 50px 0;
+    border-top: solid $c-gris 2px;
+    padding: 0 50px 50px 50px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
 
     &__title {
-        grid-area: title;
-        padding-bottom: 20px;
+        padding-bottom: 10px;
         text-align: center;
+        margin-top: 20px;
+    }
+
+    button{
+        margin-top: 20px;
     }
 }
 
+/*@media(min-width:768px){
+    .intro-en-adopcion{
+
+    }
+}*/
+
+
 @media(min-width:1024px) {
     .intro-en-adopcion {
-        background-color: $c-blanco;
+        border-top: none;
+        padding: 0;
     }
 }
 

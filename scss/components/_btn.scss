@@ -5,13 +5,14 @@
     font-size: 1rem;
     font-weight: bold;
     border-radius: 30px;
-    border: none;
     background-color: $c-principal;
     color: $c-blanco;
+    transition-duration: 0.3s;
 
-    &:hover {
+    &:hover, &:focus, &:active {
         background-color: $c-secundario;
         color: $c-blanco;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
     }
 }
 

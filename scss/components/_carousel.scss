@@ -2,67 +2,85 @@
     padding: 0 45px 0 45px;
 
     &-item {
-        width: 65vw;
+        /*width: 40vw;*/ /*no lo veo util*/
         max-width: 280px;
         padding: 0 15px;
-
-        &__card {
-            display: flex;
-            height: 400px;
-
-            img {
-                border-radius: 10%;
-            }
-
-            .carousel-item__txt{
-                position: relative;
-                bottom: 140px;
-                padding: 20px;
-            }
-        }
     }
 
-    &__chevron{
-            color: $c-negro;
-            font-size: 35px;
+    &__chevron {
+        color: $c-negro;
+        font-size: 35px;
     }
 }
 
 
-@media(min-width:678px){
+@media(min-width:768px) {
     .carousel {
-        padding: 0 100px 0 100px;
+        padding: 0 25px; /*mueve chevrons*/
+
         &-inner {
             display: flex;
-            width: 500px;
+            width: 650px;
 
-            .carousel-item{
+            .carousel-item {
                 display: block;
-                    margin-right: 0;
-                    flex: 0 0 calc(100%/2);
-                    width: 100%;
-                    padding: 10px;
-                &__card{
-                    height: 400px;
-                }
+                margin-right: 0;
+                flex: 0 0 calc(100%/3);
+                width: 100%;
+                padding: 10px;
+            }
+        }
+
+        &-control-prev, &-control-next{
+            width: 20px;
+        }
+    }
+}
+
+@media(min-width:1024px) {
+    .carousel {
+        &-inner {
+            width: 100%;
+            .carousel-item {
+                flex: 0 0 calc(100%/4);
             }
         }
     }
 }
 
-@media(min-width:1024px){
-    .carousel{
 
+
+
+
+/*
+
+@media(min-width:678px) {
+    .carousel {
+        padding: 0 80px;
+
+        &-inner {
+            display: flex;
+            width: 600px;
+
+            .carousel-item {
+                display: block;
+                margin: 0;
+                flex: 0 0 calc(100%/3);
+                width: 100%;
+                padding: 5px;
+            }
+        }
+    }
+}
+
+@media(min-width:1024px) {
+    .carousel {
         &-inner {
             width: 100%;
 
             .carousel-item {
                 flex: 0 0 calc(100%/4);
-
-                &__card{
-                    height: 330px;
-                }
             }
         }
     }
-}
+}*/

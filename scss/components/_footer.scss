@@ -4,7 +4,7 @@
     align-items: center;
     padding-top: 30px;
     border-top: #e4e4e4 solid 0.1px;
-    gap: 3rem;
+    gap: 2rem;
 
     &__title {
         text-align: center;
@@ -25,6 +25,7 @@
     }
 
     &__rrss{
+        margin-bottom: 25px;
         i{
                 color: $c-principal;
                 font-size: 30px;
