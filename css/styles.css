@@ -145,7 +145,6 @@ img {
   padding: 0 45px 0 45px;
 }
 .carousel-item {
-  /*width: 40vw;*/ /*no lo veo util*/
   max-width: 280px;
   padding: 0 15px;
 }
@@ -156,7 +155,7 @@ img {
 
 @media (min-width: 768px) {
   .carousel {
-    padding: 0 25px; /*mueve chevrons*/
+    padding: 0 25px;
   }
   .carousel-inner {
     display: flex;
@@ -181,38 +180,6 @@ img {
     flex: 0 0 25%;
   }
 }
-/*
-
-@media(min-width:678px) {
-    .carousel {
-        padding: 0 80px;
-
-        &-inner {
-            display: flex;
-            width: 600px;
-
-            .carousel-item {
-                display: block;
-                margin: 0;
-                flex: 0 0 calc(100%/3);
-                width: 100%;
-                padding: 5px;
-            }
-        }
-    }
-}
-
-@media(min-width:1024px) {
-    .carousel {
-        &-inner {
-            width: 100%;
-
-            .carousel-item {
-                flex: 0 0 calc(100%/4);
-            }
-        }
-    }
-}*/
 .card-adopt {
   display: flex;
   flex-direction: column;
@@ -472,11 +439,6 @@ img {
   margin-top: 20px;
 }
 
-/*@media(min-width:768px){
-    .intro-en-adopcion{
-
-    }
-}*/
 @media (min-width: 1024px) {
   .intro-en-adopcion {
     border-top: none;
@@ -719,6 +681,84 @@ img {
   justify-content: center;
   margin-top: 40px;
   gap: 1.5rem;
+}
+
+.como-colaborar {
+  display: flex;
+  flex-direction: column;
+}
+.como-colaborar h2 {
+  align-self: center;
+  margin-top: 25px;
+}
+.como-colaborar__cards {
+  gap: 2rem;
+}
+.como-colaborar__cards .como-colaborar__card h3 {
+  display: inline-block;
+  margin: 0;
+  position: relative;
+  top: 13px;
+}
+.como-colaborar__cards .como-colaborar__card img {
+  width: 50px;
+  margin-left: 10px;
+}
+.como-colaborar__cards .como-colaborar__card div {
+  display: flex;
+  flex-direction: column;
+  background-color: #f7f7f7;
+  border-radius: 0 50px 0 50px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+.como-colaborar__cards .como-colaborar__card div p {
+  padding: 20px 20px 0 20px;
+}
+.como-colaborar__cards .como-colaborar__card div a {
+  text-decoration: none;
+  color: #ff7900;
+  font-weight: bold;
+  padding-right: 40px;
+  margin-bottom: 20px;
+  text-align: end;
+}
+
+.refugios {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background-color: #f7f7f7;
+  border-radius: 50px 0 50px 0;
+  margin-top: 25px;
+}
+.refugios h2 {
+  text-align: center;
+  padding-top: 25px;
+}
+.refugios__caja {
+  display: flex;
+  justify-content: center;
+  min-width: 375px;
+  flex-wrap: wrap;
+}
+.refugios__caja img {
+  margin: 0;
+  width: 120px;
+}
+
+@media (min-width: 1024px) {
+  .colaborar-grid-desktop {
+    display: grid;
+    grid-template-columns: 1fr 450px;
+    gap: 1.5rem;
+    margin-bottom: 55px;
+  }
+  .colaborar-grid-desktop .refugios {
+    align-self: self-start;
+    height: 96.5%;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

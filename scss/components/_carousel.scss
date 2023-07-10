@@ -2,7 +2,6 @@
     padding: 0 45px 0 45px;
 
     &-item {
-        /*width: 40vw;*/ /*no lo veo util*/
         max-width: 280px;
         padding: 0 15px;
     }
@@ -16,7 +15,7 @@
 
 @media(min-width:768px) {
     .carousel {
-        padding: 0 25px; /*mueve chevrons*/
+        padding: 0 25px; 
 
         &-inner {
             display: flex;
@@ -47,40 +46,3 @@
         }
     }
 }
-
-
-
-
-
-/*
-
-@media(min-width:678px) {
-    .carousel {
-        padding: 0 80px;
-
-        &-inner {
-            display: flex;
-            width: 600px;
-
-            .carousel-item {
-                display: block;
-                margin: 0;
-                flex: 0 0 calc(100%/3);
-                width: 100%;
-                padding: 5px;
-            }
-        }
-    }
-}
-
-@media(min-width:1024px) {
-    .carousel {
-        &-inner {
-            width: 100%;
-
-            .carousel-item {
-                flex: 0 0 calc(100%/4);
-            }
-        }
-    }
-}*/
