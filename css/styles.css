@@ -110,8 +110,9 @@ img {
   }
 }
 .btn {
+  padding-top: 10px;
   width: 150px;
-  height: 50px;
+  height: 45px;
   justify-self: end;
   font-size: 1rem;
   font-weight: bold;
@@ -330,12 +331,17 @@ img {
     background-image: none;
     height: 400px;
   }
-  .bienvenida h2, .bienvenida p, .bienvenida span {
+  .bienvenida h2,
+  .bienvenida p,
+  .bienvenida span {
     color: #121210;
     padding-top: 20px;
   }
   .bienvenida p {
     font-size: 1.1rem;
+  }
+  .bienvenida a {
+    justify-self: end;
   }
   .bienvenida__caja-img {
     visibility: visible;
@@ -373,7 +379,7 @@ img {
   padding: 40px 60px 50px 60px;
   font-weight: 400;
 }
-.antes-adoptar-content__btn {
+.antes-adoptar-content a {
   grid-area: btn;
   width: 230px;
   justify-self: end;
@@ -421,6 +427,9 @@ img {
     margin-bottom: 20px;
     width: 50px;
   }
+  .intro-proceso a {
+    justify-self: end;
+  }
 }
 /* --- section introducción en adopción --- */
 .intro-en-adopcion {
@@ -435,7 +444,7 @@ img {
   text-align: center;
   margin-top: 20px;
 }
-.intro-en-adopcion button {
+.intro-en-adopcion a {
   margin-top: 20px;
 }
 
@@ -649,7 +658,7 @@ img {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-bottom: 25px;
+  margin-bottom: 65px;
 }
 .en-adopcion__caja-filtros {
   display: flex;
@@ -732,6 +741,7 @@ img {
   background-color: #f7f7f7;
   border-radius: 50px 0 50px 0;
   margin-top: 25px;
+  padding-bottom: 20px;
 }
 .refugios h2 {
   text-align: center;
@@ -758,6 +768,7 @@ img {
   .colaborar-grid-desktop .refugios {
     align-self: self-start;
     height: 96.5%;
+    padding-bottom: 0;
   }
 }
 
