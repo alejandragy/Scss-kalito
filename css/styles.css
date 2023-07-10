@@ -773,5 +773,54 @@ img {
     padding-bottom: 0;
   }
 }
+.contact {
+  background-color: #f7f7f7;
+  border-radius: 0 110px 0 110px;
+  margin-bottom: 50px;
+}
+.contact h2 {
+  margin-left: 100px;
+  padding-top: 20px;
+}
+.contact__caja {
+  padding: 20px 50px;
+}
+.contact__caja img {
+  display: none;
+}
+.contact__caja form {
+  padding-bottom: 50px;
+}
+.contact__caja form .form-item {
+  display: flex;
+  flex-direction: column;
+  /*margin-bottom: 10px;*/
+}
+.contact__caja form label {
+  font-weight: bold;
+}
+.contact__caja form input, .contact__caja form textarea {
+  border: none;
+  border-radius: 30px;
+}
+.contact__caja form input {
+  height: 30px;
+}
+.contact__caja form textarea {
+  height: 200px;
+  resize: none;
+}
+.contact__caja form .btn {
+  position: relative;
+  float: right;
+  top: 50px;
+  height: 50px;
+}
+
+@media (min-width: 768px) {
+  .contact .btn {
+    top: 15px;
+  }
+}
 
 /*# sourceMappingURL=styles.css.map */
