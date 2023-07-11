@@ -472,7 +472,6 @@ img {
   .intro-colaborar__content {
     grid-area: colaborar;
     background-color: #f7f7f7;
-    border-radius: 100;
     height: 375px;
     border-radius: 150px 0 150px 0;
   }
@@ -777,49 +776,88 @@ img {
   background-color: #f7f7f7;
   border-radius: 0 110px 0 110px;
   margin-bottom: 50px;
+  padding: 0 50px;
 }
 .contact h2 {
-  margin-left: 100px;
+  text-align: center;
   padding-top: 20px;
+  margin-bottom: 10px;
 }
-.contact__caja {
-  padding: 20px 50px;
-}
-.contact__caja img {
+.contact img {
   display: none;
 }
-.contact__caja form {
+.contact form {
   padding-bottom: 50px;
 }
-.contact__caja form .form-item {
+.contact form .form-item {
   display: flex;
   flex-direction: column;
-  /*margin-bottom: 10px;*/
+  margin-bottom: 20px;
 }
-.contact__caja form label {
+.contact form label {
   font-weight: bold;
+  margin-bottom: 8px;
 }
-.contact__caja form input, .contact__caja form textarea {
+.contact form input,
+.contact form textarea {
   border: none;
-  border-radius: 30px;
+  border-radius: 10px;
 }
-.contact__caja form input {
+.contact form input {
   height: 30px;
+  outline: none;
+  padding-left: 10px;
 }
-.contact__caja form textarea {
+.contact form textarea {
   height: 200px;
   resize: none;
+  outline: none;
+  padding: 10px;
 }
-.contact__caja form .btn {
+.contact form .btn {
   position: relative;
   float: right;
-  top: 50px;
+  top: 20px;
   height: 50px;
+  border-radius: 30px;
 }
 
 @media (min-width: 768px) {
   .contact .btn {
     top: 15px;
+  }
+}
+@media (min-width: 1024px) {
+  .contact {
+    display: grid;
+    grid-template-columns: 450px 1fr;
+    grid-template-rows: 50px 1fr;
+    grid-template-areas: "img title" "img form";
+    background-color: transparent;
+    padding: 0;
+    margin-top: 30px;
+    width: 100%;
+  }
+  .contact h2 {
+    grid-area: title;
+    align-self: center;
+  }
+  .contact img {
+    display: inline-block;
+    grid-area: img;
+    position: relative;
+    border-radius: 0 100px 0 100px;
+    bottom: 0px;
+  }
+  .contact__form {
+    grid-area: form;
+    grid-column: 2;
+    background-color: #f7f7f7;
+    border-radius: 0 110px 0 110px;
+    margin-top: 20px;
+    margin-bottom: 0;
+    padding: 50px;
+    width: 100%; /*revisar*/
   }
 }
 
