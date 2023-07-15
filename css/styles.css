@@ -783,6 +783,10 @@ img {
   padding-top: 20px;
   margin-bottom: 10px;
 }
+.contact h3 {
+  font-size: 1rem;
+  margin-bottom: 25px;
+}
 .contact img {
   display: none;
 }

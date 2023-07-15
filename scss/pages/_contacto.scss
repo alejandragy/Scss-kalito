@@ -10,13 +10,18 @@
         margin-bottom: 10px;
     }
 
+    h3{
+        font-size: 1rem;
+        margin-bottom: 25px;
+    }
+
     img {
         display: none;
     }
 
     form {
         padding-bottom: 50px;
-
+        
         .form-item {
             display: flex;
             flex-direction: column;
