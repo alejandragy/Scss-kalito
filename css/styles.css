@@ -301,7 +301,7 @@ img {
 .bienvenida {
   display: flex;
   flex-direction: column;
-  background-image: url(../img/index-bienvenida-mobile.jpg);
+  background: linear-gradient(rgba(5, 7, 12, 0.45), rgba(5, 7, 12, 0.45)), url(../img/index-bienvenida-mobile.jpg);
   background-size: cover;
   background-position: 0%;
   height: 600px;
@@ -609,7 +609,10 @@ img {
   text-align: center;
 }
 .proceso-adopcion__content {
-  padding: 20px 30px;
+  padding: 25px 20px;
+  background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75));
+  margin: 10px;
+  border-radius: 50px 0 50px 0;
 }
 
 @media (min-width: 1024px) {
@@ -638,6 +641,7 @@ img {
   }
   .proceso-adopcion__content {
     grid-area: caja;
+    background: transparent;
     background-color: #f7f7f7;
     border-radius: 0 150px 0 150px;
     width: 100%;
@@ -646,9 +650,9 @@ img {
     grid-area: img;
     width: 450px;
     height: 500px;
-    background-image: url(../img/proceso-adopcion-desktop.jpg);
+    background-image: url(../img/proceso-adopcion.jpg);
     background-size: cover;
-    background-position: 80% 20%;
+    background-position: bottom;
     border-radius: 0 150px 0 150px;
     position: relative;
     bottom: 80px;

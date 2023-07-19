@@ -126,7 +126,10 @@
     }
 
     &__content {
-        padding: 20px 30px;
+        padding: 25px 20px;
+        background:linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75));
+        margin: 10px;
+        border-radius: 50px 0 50px 0;
     }
 }
 
@@ -161,6 +164,7 @@
 
         &__content {
             grid-area: caja;
+            background: transparent;
             background-color: $c-gris;
             border-radius: 0 150px 0 150px;
             width: 100%;
@@ -171,9 +175,9 @@
         grid-area: img;
         width: 450px;
         height: 500px;
-        background-image: url(../img/proceso-adopcion-desktop.jpg);
+        background-image: url(../img/proceso-adopcion.jpg);
         background-size: cover;
-        background-position: 80% 20%;
+        background-position: bottom;
         border-radius: 0 150px 0 150px;
         position: relative;
         bottom: 80px;

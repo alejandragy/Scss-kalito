@@ -2,7 +2,7 @@
 .bienvenida {
     display: flex;
     flex-direction: column;
-    background-image: url(../img/index-bienvenida-mobile.jpg);
+    background: linear-gradient(rgba(5, 7, 12, 0.45), rgba(5, 7, 12, 0.45)), url(../img/index-bienvenida-mobile.jpg);
     background-size: cover;
     background-position: 0%;
     height: 600px;
