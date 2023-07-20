@@ -79,9 +79,19 @@
             align-self: self-start;
             margin-bottom: 20px;
 
-            i {
-                margin-left: 0;
-                margin-right: 40px;
+            a{
+                display: inline-block;
+                i {
+                    margin-left: 0;
+                    margin-right: 40px;
+                }
+            }
+
+            .icon-facebook:hover{
+                background: #4267B2;
+                -webkit-background-clip: text;
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
             }
 
             .icon-instagram:hover {
@@ -89,7 +99,15 @@
                 -webkit-background-clip: text;
                 background-clip: text;
                 -webkit-text-fill-color: transparent;
-            }     
+            }  
+
+            .icon-twitter:hover{
+                background: #1DA1F2;
+                -webkit-background-clip: text;
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+            
     }
 
     &__contact {

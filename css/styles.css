@@ -279,12 +279,27 @@ img {
     align-self: self-start;
     margin-bottom: 20px;
   }
-  .footer__rrss i {
+  .footer__rrss a {
+    display: inline-block;
+  }
+  .footer__rrss a i {
     margin-left: 0;
     margin-right: 40px;
   }
+  .footer__rrss .icon-facebook:hover {
+    background: #4267B2;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
   .footer__rrss .icon-instagram:hover {
     background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .footer__rrss .icon-twitter:hover {
+    background: #1DA1F2;
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
