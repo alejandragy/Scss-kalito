@@ -20,82 +20,91 @@
         text-decoration: none;
     }
 
-    &__about-us{
+    &__about-us {
         padding: 0 40px;
     }
 
-    &__rrss{
+    &__rrss {
         margin-bottom: 25px;
-        i{
-                color: $c-principal;
-                font-size: 30px;
-                margin: 0 30px;
+
+        i {
+            color: $c-principal;
+            font-size: 30px;
+            margin: 0 30px;
         }
 
-        h5{
+        h5 {
             padding-bottom: 16px;
         }
     }
 
-    &__contact{
+    &__contact {
         align-items: center;
         padding: 12px 40px;
     }
 
-    
-    &__logo{
+
+    &__logo {
         width: 200px;
     }
 }
 
-@media(min-width:1024px){
-    .footer{
+@media(min-width:1024px) {
+    .footer {
         display: grid;
-        grid-template-columns:  minmax(0, 500px) minmax(0, 400px) 200px;
+        grid-template-columns: minmax(0, 500px) minmax(0, 400px) 200px;
         grid-template-rows: 1fr 220px;
-        grid-template-areas: 
-        "about-us contact logo"
-        "about-us contact logo"
+        grid-template-areas:
+            "about-us contact logo"
+            "about-us contact logo"
         ;
         height: 300px;
-        gap:1rem;
+        gap: 1rem;
         padding: 30px 25px;
         justify-content: center;
 
-        &__title{
+        &__title {
             text-align: left;
         }
 
-        &__about-us{
+        &__about-us {
             grid-area: about-us;
             align-self: self-start;
         }
 
-        &__rrss{
+        &__rrss {
             grid-area: contact;
             grid-column: 2;
             grid-row: 1;
             align-self: self-start;
             margin-bottom: 20px;
-            i{
+
+            i {
                 margin-left: 0;
                 margin-right: 40px;
             }
-        }
 
-        &__contact{
-            grid-area: contact;
-            grid-column: 2;
-            grid-row: 2;
-            align-self: self-start;
-            padding: 0;
-        }
-
-        &__logo{
-            grid-area: logo;
-            grid-column: 3;
-            align-self: self-start;
-            padding-right: 20px;
-        }
+            .icon-instagram:hover {
+                background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+                -webkit-background-clip: text;
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }     
     }
+
+    &__contact {
+        grid-area: contact;
+        grid-column: 2;
+        grid-row: 2;
+        align-self: self-start;
+        padding: 0;
+    }
+
+    &__logo {
+        grid-area: logo;
+        grid-column: 3;
+        align-self: self-start;
+        padding-right: 20px;
+    }
+}
 }
