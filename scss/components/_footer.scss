@@ -79,19 +79,15 @@
             align-self: self-start;
             margin-bottom: 20px;
 
-            a{
-                display: inline-block;
-                i {
-                    margin-left: 0;
-                    margin-right: 40px;
-                }
+
+            i {
+                margin-left: 0;
+                margin-right: 40px;
             }
 
-            .icon-facebook:hover{
-                background: #4267B2;
-                -webkit-background-clip: text;
-                background-clip: text;
-                -webkit-text-fill-color: transparent;
+
+            .icon-facebook:hover {
+                color: #4267B2;
             }
 
             .icon-instagram:hover {
@@ -99,30 +95,27 @@
                 -webkit-background-clip: text;
                 background-clip: text;
                 -webkit-text-fill-color: transparent;
-            }  
-
-            .icon-twitter:hover{
-                background: #1DA1F2;
-                -webkit-background-clip: text;
-                background-clip: text;
-                -webkit-text-fill-color: transparent;
             }
-            
-    }
 
-    &__contact {
-        grid-area: contact;
-        grid-column: 2;
-        grid-row: 2;
-        align-self: self-start;
-        padding: 0;
-    }
+            .icon-twitter:hover {
+                color: #1DA1F2;
+            }
 
-    &__logo {
-        grid-area: logo;
-        grid-column: 3;
-        align-self: self-start;
-        padding-right: 20px;
+        }
+
+        &__contact {
+            grid-area: contact;
+            grid-column: 2;
+            grid-row: 2;
+            align-self: self-start;
+            padding: 0;
+        }
+
+        &__logo {
+            grid-area: logo;
+            grid-column: 3;
+            align-self: self-start;
+            padding-right: 20px;
+        }
     }
-}
 }
