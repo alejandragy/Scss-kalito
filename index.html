@@ -7,9 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
         content="Encontrá tu compañero ideal en Kalito. Adopción responsable de perros y gatos en toda Argentina.">
-
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="shortcut icon" href="./img/icon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -66,7 +66,9 @@
             <p class="txt-white">
                 Adoptar es una oportunidad única para experimentar el amor incondicional y el comienzo de un lazo
                 especial que durará para siempre
-                <br> <span class="txt-negrita txt-white">Animate a cambiar tu vida y la de un peludito que espera un hogar</span></p>
+                <br> <span class="txt-negrita txt-white">Animate a cambiar tu vida y la de un peludito que espera un
+                    hogar</span>
+            </p>
             <a href="./pages/adoptar.html" class="bienvenida__btn btn">Quiero adoptar</a>
         </section>
 
@@ -119,9 +121,9 @@
 
         <section class="intro-en-adopcion width-desktop">
             <h2 class="intro-en-adopcion__title title">En adopción</h2>
-            <div id="carouselExample" class="carousel slide">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
                         <div class="card-adopt">
                             <div class="card-adopt__caja-img">
                                 <img src="./img/adopcion-1.jpg" alt="foto de Ámbar">
@@ -132,7 +134,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="carousel-item">
+                    
+                    <div class="swiper-slide">
                         <div class="card-adopt">
                             <div class="card-adopt__caja-img">
                                 <img src="./img/adopcion-2.jpg" alt="foto de Thor">
@@ -143,20 +146,22 @@
                             </div>
                         </div>
                     </div>
-                    <div class="carousel-item">
-                        <div class="carousel-item__card">
-                            <div class="card-adopt">
-                                <div class="card-adopt__caja-img">
-                                    <img src="./img/adopcion-3.jpg" alt="foto de Chipi">
-                                </div>
-                                <div class="card-adopt__caja-txt">
-                                    <h3 class="subtitle">Chipi</h3>
-                                    <p>Macho. 5 años</p>
-                                </div>
+                    
+
+                    <div class="swiper-slide">
+                        <div class="card-adopt">
+                            <div class="card-adopt__caja-img">
+                                <img src="./img/adopcion-3.jpg" alt="foto de Chipi">
+                            </div>
+                            <div class="card-adopt__caja-txt">
+                                <h3 class="subtitle">Chipi</h3>
+                                <p>Macho. 5 años</p>
                             </div>
                         </div>
                     </div>
-                    <div class="carousel-item">
+                    
+
+                    <div class="swiper-slide">
                         <div class="card-adopt">
                             <div class="card-adopt__caja-img">
                                 <img src="./img/adopcion-4.jpg" alt="foto de Milo">
@@ -165,20 +170,34 @@
                                 <h3 class="subtitle">Milo</h3>
                                 <p>Macho. 2 años</p>
                             </div>
-
                         </div>
                     </div>
+
+                    <div class="swiper-slide">
+                        <div class="card-adopt">
+                            <div class="card-adopt__caja-img">
+                                <img src="./img/adopcion-4.jpg" alt="foto de Milo">
+                            </div>
+                            <div class="card-adopt__caja-txt">
+                                <h3 class="subtitle">Milo</h3>
+                                <p>Macho. 2 años</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="card-adopt">
+                            <div class="card-adopt__caja-img">
+                                <img src="./img/adopcion-4.jpg" alt="foto de Milo">
+                            </div>
+                            <div class="card-adopt__caja-txt">
+                                <h3 class="subtitle">Milo</h3>
+                                <p>Macho. 2 años</p>
+                            </div>
+                        </div>
+                    </div>
+                    
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
-                    data-bs-slide="prev">
-                    <span aria-hidden="true"><i class="fa-solid fa-chevron-left carousel__chevron"></i></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
-                    data-bs-slide="next">
-                    <span aria-hidden="true"><i class="fa-solid fa-chevron-right carousel__chevron"></i></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
             </div>
             <a href="./pages/adoptar.html" class="intro-en-adopcion__btn btn">Ver todos</a>
         </section>
@@ -210,8 +229,10 @@
             </div>
             <div class="footer__rrss">
                 <h4 class="footer__title">Nuestras redes</h4>
-                <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook-f icon-facebook"></i></a>
-                <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram icon-instagram"></i></a>
+                <a href="https://www.facebook.com" target="_blank"><i
+                        class="fa-brands fa-facebook-f icon-facebook"></i></a>
+                <a href="https://www.instagram.com" target="_blank"><i
+                        class="fa-brands fa-instagram icon-instagram"></i></a>
                 <a href="https://www.twitter.com" target="_blank"><i class="fa-brands fa-twitter icon-twitter"></i></a>
             </div>
             <div class="footer__contact">
@@ -229,6 +250,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
         crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 
 </html>

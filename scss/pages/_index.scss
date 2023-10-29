@@ -169,7 +169,6 @@
 
 /* --- section introducción en adopción --- */
 .intro-en-adopcion {
-    border-top: solid $c-gris 2px;
     padding: 0 50px 50px 50px;
     display: flex;
     flex-direction: column;
@@ -183,13 +182,6 @@
 
     a {
         margin-top: 20px;
-    }
-}
-
-@media(min-width:1024px) {
-    .intro-en-adopcion {
-        border-top: none;
-        padding: 0;
     }
 }
 
