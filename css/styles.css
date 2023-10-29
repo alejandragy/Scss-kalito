@@ -151,6 +151,15 @@ img {
   justify-content: center;
 }
 
+.swiper-button-prev, .swiper-button-next {
+  color: #121210 !important;
+  height: 0 !important;
+}
+
+.swiper-button-prev:after, .swiper-button-next:after {
+  font-size: 0;
+}
+
 .card-adopt {
   display: flex;
   flex-direction: column;
@@ -416,6 +425,7 @@ img {
 }
 /* --- section introducción en adopción --- */
 .intro-en-adopcion {
+  position: relative;
   padding: 0 50px 50px 50px;
   display: flex;
   flex-direction: column;
